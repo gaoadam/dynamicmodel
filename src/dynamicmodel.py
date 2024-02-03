@@ -40,7 +40,7 @@ def step(x, dt, f, t, args):
 def x_iterate(x_t0, dt, N, f, args={}):
     """
     Description:
-        generate an array containing values of u over time, ie a 3d array
+        generate an array containing values of vector x over time, ie a 3d array
     Args:
         x_t0: 1 dimensional array (numpy array), shape n
             contains n values at time t = 0
