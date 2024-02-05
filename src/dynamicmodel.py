@@ -14,12 +14,12 @@ def step(x, dt, f, t, args):
     Args:
         x: 1 dimensional array, shape n (numpy array)
             contains n values at time t
-        dt: scalar value
+        dt: float; scalar value
             timestep quantity
         f: 1 dimensional list, shape n
             contains n functions to be used on x to calculate time derivatives of x
-        t: time value, passed into functions in f
-        args: arguments to determine f
+        t: float; time value, passed into functions in f
+        args: dict;  arguments to determine f
         
     """
     
@@ -44,13 +44,13 @@ def x_iterate(x_t0, dt, N, f, args={}):
     Args:
         x_t0: 1 dimensional array (numpy array), shape n
             contains n values at time t = 0
-        dt: scalar value
+        dt: float; scalar value
             timestep quantity
-        N: scalar value
+        N: int;
             number of time steps to be iterated through
         f: 1 dimensional list, shape n
             contains n functions to be used on x in a step function, to calculate x at each time step t+dt
-        args: arguments to determine f
+        args: dict; arguments to determine f
     """
     
     #Initialize tensor at time = 0
