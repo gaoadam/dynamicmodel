@@ -107,12 +107,15 @@ def x_driven(x_t0, dt, N, m, b, k, u1, args):
     args: dictionary
         arguments for function u
     """
+    #Prepare system functions
+    #Velocity
     def xdot(x, t, args):
         return x[1]
-    
+    #Acceleration
     def xdotdot(x, t, args):
         return (u1(t, args) - b*x[1] - k*x[0])/m
     
+    #Iterate through the time steps to calculate the variables using the system functions
     x_full = x_iterate(x_t0=x_t0, dt=dt, N=N, f=[xdot, xdotdot], args=args)
     
     return x_full
@@ -138,6 +141,7 @@ def x_rlc(x_t0, dt, N, r, l, c, u1, args):
     args: dictionary
         arguments for function u
     """
+    #Prepare system functions
     #function for v_c ie capacitor voltage
     def x1dot(x, t, args):
         return x[1]/c
@@ -146,6 +150,7 @@ def x_rlc(x_t0, dt, N, r, l, c, u1, args):
     def x2dot(x, t, args):
         return -1/l*x[0] - r/l*x[1] + 1/l*u1(t, args)
     
+    #Iterate through the time steps to calculate the variables using the system functions
     x_full = x_iterate(x_t0=x_t0, dt=dt, N=N, f=[x1dot, x2dot], args=args)
     
     return x_full
