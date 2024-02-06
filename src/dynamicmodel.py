@@ -90,8 +90,8 @@ def x_driven(x_t0, dt, N, m, b, k, u1, args):
     """
     Description:
         Simulate damped driven oscillator, with driving force u_1(t)
-    x_t0: 1 dimensional array (torch tensor), shape n
-            contains n values at time t = 0
+    x_t0: 1 dimensional array, shape 2
+            contains 2 values at time t = 0: position and velocity
     dt: scalar value
             timestep quantity
     N: scalar value
@@ -124,8 +124,8 @@ def x_rlc(x_t0, dt, N, r, l, c, u1, args):
     """
     Description:
         Simulate RLC circuit, with voltage u_1(t)
-    x_t0: 1 dimensional array (torch tensor), shape n
-            contains n values at time t = 0
+    x_t0: 1 dimensional array, shape 2: capacitor voltage and inductor current
+            contains 2 values at time t = 0: 
     dt: scalar value
             timestep quantity
     N: scalar value
