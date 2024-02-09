@@ -211,7 +211,7 @@ def plot_x(x_array, columns, title):
         #plot x(t)
             axs[i-1].plot(x_array[:,0], x_array[:,i])
             axs[i-1].set_xlabel('t')
-            axs[i-1].set_ylabel(df.columns[i])
+            axs[i-1].set_ylabel(columns[i])
     elif n-1==1:
         axs.plot(x_array[:,0], x_array[:,1])
         axs.set_xlabel('t')
