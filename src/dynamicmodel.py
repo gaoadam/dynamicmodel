@@ -187,6 +187,7 @@ def plot_df(df, title):
         axs.plot(x_array[:,0], x_array[:,1])
         axs.set_xlabel('t')
         axs.set_ylabel(df.columns[1])
+        
 def plot_x(x_array, columns, title):
     """
     Description:
