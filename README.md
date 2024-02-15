@@ -46,12 +46,12 @@ The following are some plots and "phase portraits" I plotted from my simulation 
 
 First I simulate an oscillator with a sinusoidal driving force and a strong damping component:
 
-![damped_oscillator.png](example_plots\damped_oscillator.png)
+![damped_oscillator.png](https://github.com/gaoadam/dynamicmodel/blob/main/example_plots/damped_oscillator.png)
 
-![damped_oscillator.png](example_plots\damped_phase_portrait.png)
+![damped_oscillator.png](https://github.com/gaoadam/dynamicmodel/blob/main/example_plots/damped_phase_portrait.png)
 
 I also simulate an oscillator with multiple sinusoidal driving forces and a negligible damping component:
 
-![damped_oscillator.png](example_plots\damped_oscillator2.png)
+![damped_oscillator.png](https://github.com/gaoadam/dynamicmodel/blob/main/example_plots/damped_oscillator2.png)
 
-![damped_oscillator.png](example_plots\damped_phase_portrait2.png)
+![damped_oscillator.png](https://github.com/gaoadam/dynamicmodel/blob/main/example_plots/damped_phase_portrait2.png)
