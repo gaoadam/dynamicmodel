@@ -1,13 +1,16 @@
-# Dynamimc Modeler
+# Dynamic Modeler
 
 ## Installation
 First, clone the repository to a local folder of your choosing.
 
 Package requirements for installation can be found in requirements.txt or environment.yml.
+
 To install requirements using pip, create a new virtual environment. Then run "pip install -r requirements.txt" with the virtual environment active and in the directory of the cloned repository.
 
 ## Overview
-See [writeup](https://gaoadam.github.io/docs/projects/dynamic_modeler/dynamic_modeler.html) for a more illustrative explanation.
+See [writeup](https://gaoadam.github.io/docs/projects/dynamic_modeler/dynamic_modeler.html) for a more illustrative explanation of the module.
+
+See other [writeup](https://gaoadam.github.io/docs/projects/filters_and_neural_networks/filters_and_neural_networks.html) to see how I use **neural networks** to predict dynamical system behavior using **TensorFlow**.
 
 See generate_signals.ipynb for an example use of the dynamicmodel.py module
 
